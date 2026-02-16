@@ -1,0 +1,30 @@
+name: velox_state
+description: >
+  A lightweight reactive state management solution for the Velox collection.
+  Provides notifiers, command pattern with undo/redo, and derived state selectors.
+version: 0.1.0
+homepage: https://github.com/velox-flutter/velox
+repository: https://github.com/velox-flutter/velox/tree/main/packages/velox_state
+issue_tracker: https://github.com/velox-flutter/velox/issues
+
+topics:
+  - state-management
+  - reactive
+  - notifier
+  - velox
+  - flutter
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+resolution: workspace
+
+dependencies:
+  meta: ^1.16.0
+  velox_core:
+    path: ../velox_core
+
+dev_dependencies:
+  velox_lint:
+    path: ../velox_lint
+  test: ^1.25.0

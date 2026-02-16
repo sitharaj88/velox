@@ -1,0 +1,23 @@
+name: velox_lint
+description: >
+  Strict, opinionated lint rules for the Velox Flutter plugin collection.
+  Use these rules to enforce consistent, high-quality Dart and Flutter code.
+version: 0.1.0
+homepage: https://github.com/velox-flutter/velox
+repository: https://github.com/velox-flutter/velox/tree/main/packages/velox_lint
+issue_tracker: https://github.com/velox-flutter/velox/issues
+
+topics:
+  - lint
+  - analysis
+  - velox
+  - style
+  - quality
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+resolution: workspace
+
+dependencies:
+  flutter_lints: ^5.0.0

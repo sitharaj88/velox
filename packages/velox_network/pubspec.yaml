@@ -1,0 +1,32 @@
+name: velox_network
+description: >
+  A high-performance HTTP client abstraction for Flutter with interceptors,
+  retry logic, and circuit breaker pattern. Part of the Velox collection.
+version: 0.1.0
+homepage: https://github.com/velox-flutter/velox
+repository: https://github.com/velox-flutter/velox/tree/main/packages/velox_network
+issue_tracker: https://github.com/velox-flutter/velox/issues
+
+topics:
+  - network
+  - http
+  - client
+  - velox
+  - flutter
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+resolution: workspace
+
+dependencies:
+  meta: ^1.16.0
+  velox_core:
+    path: ../velox_core
+  velox_logger:
+    path: ../velox_logger
+
+dev_dependencies:
+  velox_lint:
+    path: ../velox_lint
+  test: ^1.25.0

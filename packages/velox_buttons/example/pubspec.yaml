@@ -1,0 +1,12 @@
+name: velox_buttons_example
+publish_to: none
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  velox_buttons:
+    path: ../

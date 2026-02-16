@@ -1,0 +1,30 @@
+name: velox_cache
+description: >
+  An intelligent caching layer for Flutter with LRU eviction, TTL expiration,
+  and reactive cache streams. Part of the Velox collection.
+version: 0.1.0
+homepage: https://github.com/velox-flutter/velox
+repository: https://github.com/velox-flutter/velox/tree/main/packages/velox_cache
+issue_tracker: https://github.com/velox-flutter/velox/issues
+
+topics:
+  - cache
+  - caching
+  - lru
+  - velox
+  - flutter
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+resolution: workspace
+
+dependencies:
+  meta: ^1.16.0
+  velox_core:
+    path: ../velox_core
+
+dev_dependencies:
+  velox_lint:
+    path: ../velox_lint
+  test: ^1.25.0

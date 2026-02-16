@@ -1,0 +1,27 @@
+name: velox_responsive
+description: >-
+  A responsive layout system for Flutter with breakpoint-aware widgets,
+  responsive grid, adaptive sizing, and platform detection.
+version: 0.1.0
+homepage: https://github.com/velox-flutter/velox
+repository: https://github.com/velox-flutter/velox/tree/main/packages/velox_responsive
+issue_tracker: https://github.com/velox-flutter/velox/issues
+topics:
+  - responsive
+  - layout
+  - adaptive
+  - grid
+
+resolution: workspace
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

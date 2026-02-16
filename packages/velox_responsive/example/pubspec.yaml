@@ -1,0 +1,13 @@
+name: velox_responsive_example
+description: Example app demonstrating velox_responsive.
+publish_to: none
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  velox_responsive:
+    path: ../

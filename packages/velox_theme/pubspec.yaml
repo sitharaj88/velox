@@ -1,0 +1,29 @@
+name: velox_theme
+description: >-
+  A powerful Material 3 theming engine for Flutter with dynamic color schemes,
+  custom typography, and seamless theme switching.
+version: 0.1.0
+homepage: https://github.com/velox-flutter/velox
+repository: https://github.com/velox-flutter/velox/tree/main/packages/velox_theme
+issue_tracker: https://github.com/velox-flutter/velox/issues
+topics:
+  - theme
+  - material3
+  - design-system
+  - color-scheme
+
+resolution: workspace
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  velox_core:
+    path: ../velox_core
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

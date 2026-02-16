@@ -1,0 +1,29 @@
+name: velox_forms
+description: >-
+  A declarative form builder for Flutter with built-in validation,
+  async validators, auto-save, and reactive state management.
+version: 0.1.0
+homepage: https://github.com/velox-flutter/velox
+repository: https://github.com/velox-flutter/velox/tree/main/packages/velox_forms
+issue_tracker: https://github.com/velox-flutter/velox/issues
+topics:
+  - forms
+  - validation
+  - input
+  - widgets
+
+resolution: workspace
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  velox_state:
+    path: ../velox_state
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

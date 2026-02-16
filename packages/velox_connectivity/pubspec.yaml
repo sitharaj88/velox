@@ -1,0 +1,39 @@
+name: velox_connectivity
+description: >-
+  Real-time network connectivity monitoring for Flutter with connection type
+  detection, bandwidth estimation, and reactive status streams.
+version: 0.1.0
+homepage: https://github.com/velox-flutter/velox
+repository: https://github.com/velox-flutter/velox/tree/main/packages/velox_connectivity
+issue_tracker: https://github.com/velox-flutter/velox/issues
+topics:
+  - connectivity
+  - network
+  - monitoring
+  - status
+
+resolution: workspace
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.velox.connectivity
+        pluginClass: VeloxConnectivityPlugin
+      ios:
+        pluginClass: VeloxConnectivityPlugin
+
+dependencies:
+  flutter:
+    sdk: flutter
+  meta: ^1.16.0
+  velox_core:
+    path: ../velox_core
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

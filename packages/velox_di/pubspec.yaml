@@ -1,0 +1,31 @@
+name: velox_di
+description: >
+  Compile-time safe dependency injection container for the Velox Flutter plugin
+  collection. Supports singletons, factories, lazy registration, scoped
+  containers, and modular grouping with zero configuration.
+version: 0.1.0
+homepage: https://github.com/velox-flutter/velox
+repository: https://github.com/velox-flutter/velox/tree/main/packages/velox_di
+issue_tracker: https://github.com/velox-flutter/velox/issues
+
+topics:
+  - dependency-injection
+  - di
+  - service-locator
+  - velox
+  - flutter
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+resolution: workspace
+
+dependencies:
+  meta: ^1.16.0
+  velox_core:
+    path: ../velox_core
+
+dev_dependencies:
+  velox_lint:
+    path: ../velox_lint
+  test: ^1.25.0

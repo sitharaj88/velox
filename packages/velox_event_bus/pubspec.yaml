@@ -1,0 +1,30 @@
+name: velox_event_bus
+description: >
+  Typed event bus for the Velox Flutter plugin collection. Provides a
+  lightweight, broadcast-based pub/sub system with type-safe subscriptions.
+version: 0.1.0
+homepage: https://github.com/velox-flutter/velox
+repository: https://github.com/velox-flutter/velox/tree/main/packages/velox_event_bus
+issue_tracker: https://github.com/velox-flutter/velox/issues
+
+topics:
+  - event-bus
+  - events
+  - flutter
+  - pub-sub
+  - velox
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+resolution: workspace
+
+dependencies:
+  meta: ^1.16.0
+  velox_core:
+    path: ../velox_core
+
+dev_dependencies:
+  test: ^1.25.0
+  velox_lint:
+    path: ../velox_lint

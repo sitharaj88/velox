@@ -1,0 +1,39 @@
+name: velox_biometrics
+description: >-
+  Biometric authentication for Flutter with fingerprint, face recognition,
+  and PIN fallback support through a unified platform interface.
+version: 0.1.0
+homepage: https://github.com/velox-flutter/velox
+repository: https://github.com/velox-flutter/velox/tree/main/packages/velox_biometrics
+issue_tracker: https://github.com/velox-flutter/velox/issues
+topics:
+  - biometrics
+  - authentication
+  - fingerprint
+  - security
+
+resolution: workspace
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.velox.biometrics
+        pluginClass: VeloxBiometricsPlugin
+      ios:
+        pluginClass: VeloxBiometricsPlugin
+
+dependencies:
+  flutter:
+    sdk: flutter
+  meta: ^1.16.0
+  velox_core:
+    path: ../velox_core
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

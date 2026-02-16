@@ -1,0 +1,32 @@
+name: velox_auth
+description: >-
+  Token management and OAuth2 authentication for Flutter with secure storage,
+  automatic refresh, session lifecycle, and interceptor support.
+version: 0.1.0
+homepage: https://github.com/velox-flutter/velox
+repository: https://github.com/velox-flutter/velox/tree/main/packages/velox_auth
+issue_tracker: https://github.com/velox-flutter/velox/issues
+topics:
+  - auth
+  - oauth2
+  - token
+  - authentication
+
+resolution: workspace
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+dependencies:
+  meta: ^1.16.0
+  velox_core:
+    path: ../velox_core
+  velox_network:
+    path: ../velox_network
+  velox_storage:
+    path: ../velox_storage
+
+dev_dependencies:
+  velox_lint:
+    path: ../velox_lint
+  test: ^1.25.0

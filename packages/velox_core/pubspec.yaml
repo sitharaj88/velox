@@ -1,0 +1,28 @@
+name: velox_core
+description: >
+  Foundation package for the Velox collection. Provides Result types,
+  exception hierarchy, and common extensions with zero third-party dependencies.
+version: 0.1.0
+homepage: https://github.com/velox-flutter/velox
+repository: https://github.com/velox-flutter/velox/tree/main/packages/velox_core
+issue_tracker: https://github.com/velox-flutter/velox/issues
+
+topics:
+  - velox
+  - result
+  - functional
+  - extensions
+  - utilities
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+resolution: workspace
+
+dependencies:
+  meta: ^1.16.0
+
+dev_dependencies:
+  velox_lint:
+    path: ../velox_lint
+  test: ^1.25.0

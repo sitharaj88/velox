@@ -1,0 +1,66 @@
+name: velox
+repository: https://github.com/velox-flutter/velox
+
+packages:
+  - packages/**
+  - examples/**
+
+command:
+  bootstrap:
+    runPubGetInParallel: true
+  version:
+    branch: main
+    linkToCommits: true
+    workspaceChangelog: true
+    changelogs:
+      - path: CHANGELOG.md
+        description: All notable changes to the Velox collection.
+        packageFilters:
+          scope: packages
+
+scripts:
+  analyze:
+    description: Run static analysis across all packages.
+    exec: dart analyze --fatal-infos .
+    packageFilters:
+      dirExists: lib
+
+  format:
+    description: Check formatting across all packages.
+    exec: dart format --output=none --set-exit-if-changed .
+    packageFilters:
+      dirExists: lib
+
+  format:fix:
+    description: Auto-fix formatting across all packages.
+    exec: dart format .
+    packageFilters:
+      dirExists: lib
+
+  test:
+    description: Run tests with coverage for all packages.
+    exec: flutter test --coverage
+    packageFilters:
+      dirExists: test
+
+  test:unit:
+    description: Run only unit tests.
+    exec: dart test --tags unit
+    packageFilters:
+      dirExists: test
+
+  publish:dry:
+    description: Dry-run publish all packages.
+    exec: flutter pub publish --dry-run
+    packageFilters:
+      noPrivate: true
+
+  clean:
+    description: Clean all packages.
+    exec: flutter clean
+
+  doc:
+    description: Generate API documentation.
+    exec: dart doc .
+    packageFilters:
+      dirExists: lib

@@ -1,0 +1,29 @@
+name: velox_buttons
+description: >-
+  Advanced button components for Flutter including gradient, loading state,
+  icon, and social login buttons with smooth animations.
+version: 0.1.0
+homepage: https://github.com/velox-flutter/velox
+repository: https://github.com/velox-flutter/velox/tree/main/packages/velox_buttons
+issue_tracker: https://github.com/velox-flutter/velox/issues
+topics:
+  - buttons
+  - ui
+  - widgets
+  - material
+
+resolution: workspace
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  velox_theme:
+    path: ../velox_theme
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

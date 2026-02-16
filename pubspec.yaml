@@ -1,0 +1,31 @@
+name: velox_workspace
+publish_to: none
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+workspace:
+  - packages/velox_animations
+  - packages/velox_auth
+  - packages/velox_biometrics
+  - packages/velox_buttons
+  - packages/velox_cache
+
+  - packages/velox_connectivity
+  - packages/velox_core
+  - packages/velox_device
+  - packages/velox_di
+  - packages/velox_event_bus
+  - packages/velox_forms
+  - packages/velox_lint
+  - packages/velox_logger
+  - packages/velox_network
+  - packages/velox_permissions
+  - packages/velox_responsive
+  - packages/velox_state
+  - packages/velox_storage
+  - packages/velox_theme
+  - packages/velox_ui
+
+dev_dependencies:
+  melos: ^7.0.0

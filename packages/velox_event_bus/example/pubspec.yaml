@@ -1,0 +1,9 @@
+name: velox_event_bus_example
+publish_to: none
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+dependencies:
+  velox_event_bus:
+    path: ../
