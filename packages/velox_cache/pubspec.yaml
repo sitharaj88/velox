@@ -23,6 +23,8 @@ dependencies:
   meta: ^1.16.0
   velox_core:
     path: ../velox_core
+  velox_storage:
+    path: ../velox_storage
 
 dev_dependencies:
   velox_lint:

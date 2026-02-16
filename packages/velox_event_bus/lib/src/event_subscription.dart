@@ -1,5 +1,8 @@
 import 'dart:async';
 
+/// A callback that is invoked when a subscription is cancelled.
+typedef CancelCallback = void Function();
+
 /// A handle to an event bus subscription that can be cancelled.
 ///
 /// Wraps a [StreamSubscription] and provides a simplified cancellation API.
@@ -14,9 +17,14 @@ import 'dart:async';
 /// ```
 class VeloxEventSubscription {
   /// Creates a [VeloxEventSubscription] wrapping the given [_subscription].
-  VeloxEventSubscription(this._subscription);
+  ///
+  /// An optional [onCancel] callback is invoked when the subscription is
+  /// cancelled, allowing cleanup of handler registrations.
+  VeloxEventSubscription(this._subscription, {CancelCallback? onCancel})
+      : _onCancel = onCancel;
 
   final StreamSubscription<dynamic> _subscription;
+  final CancelCallback? _onCancel;
 
   bool _isCancelled = false;
 
@@ -30,6 +38,7 @@ class VeloxEventSubscription {
   Future<void> cancel() async {
     if (_isCancelled) return;
     _isCancelled = true;
+    _onCancel?.call();
     await _subscription.cancel();
   }
 
